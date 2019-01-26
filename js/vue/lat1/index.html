@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<title>Test</title>
+	<link rel="stylesheet" href="">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js"></script>
+</head>
+<body>
+	<div id="app">
+	Selamat datang di {{judul}}
+	</div>
+	<script>
+		var app = new Vue({
+			el: '#app',
+			data: {
+				judul: 'Belajar vuejs',
+			}
+		})
+	</script>
+</body>
+</html>

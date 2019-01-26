@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Maps</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/custom_css/maps_custom.css">
+
+    <!-- Ini Mapsnya (Wajib diisi apinya) -->
+    <script src="https://maps.googleapis.com/maps/api/js?key='Masukin Api Milik Mu'=initAutocomplete"
+    async defer></script>
+  </head>
+  <body class="container">
+    <br>
+    <br>
+    <input id="pac-input" class="controls" type="text" placeholder="Cari Alamat">
+    <div id="map" style="height:450px;margin-bottom: 10px"></div>
+    <div style="text-align:center">
+      <form action="" method="post">
+        <div class="row">
+          <div class="col-sm-5 col-xs-4">
+            <input disabled="disabled" class="form-control" value="" type="text" name="lat" id="lat" placeholder="latitude">
+          </div>
+          <div class="col-sm-5 col-xs-4">
+            <input disabled="disabled" class="form-control" value="" type="text" name="lng" id="lng" placeholder="longitude">
+          </div>
+          <div class="col-sm-2 col-xs-4">
+            <a href="#" result="allow" onclick="return CloseMySelf();" class="btn btn-success btn-block">Pilih</a>
+          </div>
+        </div>
+        
+      </form>
+    </div>
+    <script src="./assets/custom_js/custom_maps.js"></script>
+  </body>
+</html>
